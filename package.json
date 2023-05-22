@@ -1,0 +1,36 @@
+{
+  "name": "chrome-extension-boilerplate",
+  "version": "2.17.1-alpha.1",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm -C ./app dev",
+    "build": "pnpm -C ./app build",
+    "clean": "rm -rf node_modules **/node_modules",
+    "lint": "pnpm --filter '@chrome-extension-boilerplate/*' lint",
+    "lint:fix": "pnpm --filter '@chrome-extension-boilerplate/*' lint:fix",
+    "lint-staged": "pnpm --filter '@chrome-extension-boilerplate/*' lint-staged",
+    "prettier": "pnpm --filter '@chrome-extension-boilerplate/*' prettier",
+    "prettier:fix": "pnpm --filter '@chrome-extension-boilerplate/*' prettier:fix",
+    "format:check": "pnpm --filter '@chrome-extension-boilerplate/*' format:check",
+    "format": "pnpm --filter '@chrome-extension-boilerplate/*' format",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "eslint": "8.34.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.1",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.1.0",
+    "@vitest/coverage-c8": "^0.30.1",
+    "jest-environment-jsdom": "^29.5.0",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.8.3",
+    "stylelint": "^14.8.2",
+    "vitest": "^0.30.1"
+  }
+}

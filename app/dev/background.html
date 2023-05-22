@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      type="application/javascript"
+      src="./browser-polyfill.min.js"
+    ></script>
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="http://localhost:5173/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chrome Extension</title>
+  </head>
+  <body>
+    <div id="root">this is background</div>
+    <script
+      type="module"
+      src="http://localhost:5173/src/extension/background/start_service.ts"
+    ></script>
+  </body>
+</html>
